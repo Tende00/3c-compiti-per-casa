@@ -12,8 +12,7 @@ main()
     int numero_operazione_desiderata=0;
     float x=0;
 
-
-
+    cout<<"PROGRAMMA PER CALCOLARE AREA; PERIMETRO O DIAGONALE DI UN RETTANGOLO DATI 2 LATI\n\n\n\n"<<endl;
     cout<<"Inserisci la lunghezza del primo lato del rettangolo"<<endl;
     cin>> a;
     cout<<"Inserisci la lunghezza del secondo lato del rettangolo"<<endl;
@@ -23,28 +22,28 @@ main()
     cout<<"Premi il tasto '3' se vuoi calcolare la diagonale del rettangolo"<<endl;
     cin>> numero_operazione_desiderata;
 
-    area=a*b;
-    perimetro=(a+b)*2;
-    x=(a*a)+(b*b);
-    diagonale = sqrt(x);
 
 
     switch(numero_operazione_desiderata){
 
-        case 1:cout<<"Il perimetro e':"<<perimetro<<endl;
-        break;
-        case 2:cout<<"L'area e':"<<area<<endl;
-        break;
-        case 3:cout<<"La diagonale e':"<<diagonale<<endl;
+        case 1:
+            perimetro=(a+b)*2;
+            cout<<"Il perimetro e':"<<perimetro<<endl;
         break;
 
+        case 2:
+            area=a*b;
+            cout<<"L'area e':"<<area<<endl;
+        break;
 
+        case 3:
+            x=(a*a)+(b*b);
+            diagonale = sqrt(x);
+            cout<<"La diagonale e':"<<diagonale<<endl;
+        break;
 
 
     }
-
-
-
 
 
 
